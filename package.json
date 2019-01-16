@@ -1,0 +1,20 @@
+{
+  "name": "log",
+  "version": "1.0.0",
+  "description": "",
+  "main": "log.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.4.3",
+    "morgan": "^1.9.1",
+    "helmet": "^3.15.0",
+    "uuid": "^3.3.2"
+  }
+}
