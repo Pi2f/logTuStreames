@@ -70,6 +70,6 @@ app.get('/logout/:id', function(req, res){
 });
 
 const server = http.createServer(app)
-.listen(config.port, function(){ 
+.listen(process.env.PORT || config.port, function(){ 
   console.log(`Example app listening on port ${config.port}!`)
 });
