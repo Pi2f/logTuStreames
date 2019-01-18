@@ -97,7 +97,7 @@ module.exports = {
             _logID: uuidv4(),
             type: type.AUTH,
             userID: data._userID,
-            message: "Connexion",
+            message: "LOGIN",
             date: Date.now(),
         });
         logData.save(function(err){
@@ -114,7 +114,7 @@ module.exports = {
             _logID: uuidv4(),
             type: type.AUTH,
             userID: data,
-            message: "Deconnexion",
+            message: "LOGOUT",
             date: Date.now(),
         });
         logData.save(function(err){
