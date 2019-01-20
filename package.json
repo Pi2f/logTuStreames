@@ -1,8 +1,8 @@
 {
-  "name": "log",
+  "name": "log-tustreames",
   "version": "1.0.0",
   "description": "",
-  "main": "log.js",
+  "main": "",
   "scripts": {
     "start": "node server.js"
   },

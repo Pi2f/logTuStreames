@@ -54,7 +54,7 @@ const logSchema = new mongoose.Schema({
 });
 
 logSchema.pre('remove', function () {
-    var log = this;
+    const log = this;
     logModel.updateOne(log,
         {
             isActive: false 
@@ -65,7 +65,7 @@ logSchema.pre('remove', function () {
 });
 
 logSchema.pre('find', function (next) {
-    var query = this;
+    const query = this;
     query.where({isActive: true});
     next();
 });
